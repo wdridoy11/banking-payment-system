@@ -10,7 +10,43 @@
 </head>
 
 <body>
-   <h1>Hello</h1>
+   <main class="w-full lg:w-9/12 mx-auto">
+      <section>
+         <h1 class="text-center text-5xl font-semibold my-10">Welcome to our bank</h1>
+         <div class="grid grid-cols-1 mx-2 gap-5 md:grid-cols-3">
+            <div class="bg-green-400 p-8 rounded-lg">
+               <h4 class="text-white text-3xl font-semibold mb-4">Deposit</h4>
+               <h2 class="text-white text-5xl font-bold">$<span>00</span></h2>
+            </div>
+            <div class="bg-fuchsia-400 p-8 rounded-lg">
+               <h4 class="text-white text-3xl font-semibold mb-4">Withdraw</h4>
+               <h2 class="text-white text-5xl font-bold">$<span>00</span></h2>
+            </div>
+            <div class="bg-blue-400 p-8 rounded-lg">
+               <h4 class="text-white text-3xl font-semibold mb-4">Balance</h4>
+               <h2 class="text-white text-5xl font-bold">$<span>00</span></h2>
+            </div>
+         </div>
+      </section>
+      <section class="mt-10">
+         <div class="grid grid-cols-1 gap-10 mx-2 md:grid-cols-2">
+            <div class="bg-pink-300 p-8 rounded-lg">
+               <h4 class="text-white text-3xl font-semibold mb-5">Please Deposit</h4>
+               <input type="text" id="deposit-field" class="block px-4 py-3 mb-3 w-full focus:outline-none focus:ring-2
+               focus:ring-sky-500" placeholder="$ Amount you want to deposit">
+               <button class="bg-blue-400 text-white px-5 py-2 rounded-none text-lg
+               font-semibold mt-3 hover:bg-blue-500 duration-500" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="bg-purple-400 p-8 rounded-lg">
+               <h4 class="text-white text-3xl font-semibold mb-5">Please Withdraw</h4>
+               <input type="text" id="withdraw-field" class="block px-4 py-3 mb-3 w-full focus:outline-none focus:ring-2
+               focus:ring-sky-500" placeholder="$ Amount you want to deposit">
+               <button class="bg-blue-400 text-white px-5 py-2 rounded-none text-lg
+               font-semibold mt-3 hover:bg-blue-500 duration-500" id="withdraw-btn">Withdraw</button>
+            </div>
+         </div>
+      </section>
+   </main>
 </body>
 
 </html>
