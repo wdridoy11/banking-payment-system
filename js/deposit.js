@@ -26,6 +26,6 @@ depositBtn.addEventListener("click", function () {
   let currentBalanceTotal = previousBalanceTotal + newDepositAmount;
   balanceTotal.innerText = currentBalanceTotal;
 
-  // when new deposit amount adding completes then create input field
+  // when new deposit amount adding completes then clear input field
   depositInputField.value = "";
 })
